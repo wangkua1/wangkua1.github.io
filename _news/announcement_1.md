@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2020-07-10 
 inline: true
 ---
 
-A simple inline announcement.
+Upcoming ICML2020 UDL workshop presentation!

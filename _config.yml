@@ -3,6 +3,7 @@
 # -----------------------------------------------------------------------------
 
 title: Kuan-Chieh (Jackson) Wang
+# title: K.C.J.W
 email: wangkua1@cs.toronto.edu
 description: > # this means to ignore newlines until "url:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
@@ -39,7 +40,7 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 github_username: wangkua1 # your GitHub user name
 twitter_username: kcjacksonwang # your Twitter handle
 linkedin_username: # your LinkedIn user name
-scholar_userid: # your Google Scholar ID
+scholar_userid: LgMuT6IAAAAJ # your Google Scholar ID
 orcid_id: # your ORCID ID
 medium_username: # your Medium username
 quora_username: # your Quora username
@@ -119,7 +120,9 @@ plugins:
 
 scholar:
 
-  last_name: Wang
+  # first_name: Kuan-Chieh
+  # last_name: Wang
+  
 
   style: apa
   locale: en
