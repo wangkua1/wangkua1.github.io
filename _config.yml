@@ -120,8 +120,8 @@ plugins:
 
 scholar:
 
-  # first_name: Kuan-Chieh
-  # last_name: Wang
+  first_name: Kuan-Chieh
+  last_name: Wang
   
 
   style: apa
