@@ -15,7 +15,8 @@ social: true
 
 Hi!  
 I am a final-year Ph.D. student focusing on Machine Learning at the University of Toronto, and [Vector Institute](https://vectorinstitute.ai/) advised by Professor [Rich Zemel](http://www.cs.toronto.edu/~zemel/inquiry/home.php). Before grad school, I obtained my undergraduate degree from Engineering Science at UofT. I was born and raised in Taipei, [Taiwan](https://www.youtube.com/watch?v=FYpyquAvYLM). 
-[Curriculum Vitae](/assets/pdf/resume.pdf)
+
+Here is my [Curriculum Vitae/resume](/assets/pdf/resume.pdf).  Please visit the 'publications' tab for papers/codes.
 
 <!-- [_Research Interest_](## Research Interest) [_Professional Experience_](## Professional Experience) [_Servicese_](## Services) -->
 
@@ -40,7 +41,8 @@ On my way to figuring that out (i.e. how to declare something being 'out-of-dist
 ## Professional Experience
 I was
 * a intern at Google Brain (MTV, TOR) in 2018 hosted by [Chung-Cheng Chiu](https://ai.google/research/people/ChungChengChiu). We worked on speech recognition together.
-* a research student working with the Toronto Raptors' analysts Keith Boyarsky and Eric Khoury. 
+* a research student working with the Toronto Raptors' analysts Keith Boyarsky and Eric Khoury. My mom likes to believe that the Toronto Raptors getting better, and eventually winning the Championship in 2019 had something to do with my research. 🤔
+* a ML consultant at SmartFinance LLC, a start-up Rich co-founded. We had some fun trying to make finance easier with ML. 
 
 <!-- 
 ## Services -->
