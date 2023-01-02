@@ -6,7 +6,7 @@ description: # Ph.D. student, University of Toronto and Vector Institute
 
 profile:
   align: right
-  image: headshot.jpg
+  image: headshot.JPG
   address: #
 
 news: true
@@ -20,7 +20,7 @@ I am a PostDoc at [Stanford CS](https://cs.stanford.edu/) and the [Wu Tsai Human
 
 Previously, I obtained my Ph.D. in Machine Learning at the University of Toronto, and [Vector Institute](https://vectorinstitute.ai/) advised by Prof. [Rich Zemel](http://www.cs.toronto.edu/~zemel/inquiry/home.php). I obtained my undergraduate degree from Engineering Science at UofT. I was born and raised in Taipei, [Taiwan](https://www.youtube.com/watch?v=FYpyquAvYLM).
 
-[CV/Resume](assets/pdf/resume.pdf) not up-to-date.
+<!-- [CV/Resume](assets/pdf/resume.pdf) not up-to-date. -->
 
 ## Research Interest
 Along with my colleagues , we think about how to use AI and neural networks to optimize athletic performance 🏋🏻‍♂️.  More specifically, my current projects revolve around **3D human motion reconstruction from casually captured videos**.
