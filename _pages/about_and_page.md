@@ -28,7 +28,7 @@ Previously, I obtained my Ph.D. in Machine Learning at the University of Toronto
 <br/>
 
 # Research Interest
-Along with my colleagues , we think about how to use AI and neural networks to optimize athletic performance 🏋🏻‍♂️.  More specifically, my current projects revolve around **3D human motion reconstruction from casually captured videos**.
+Along with my colleagues , we think about how to use AI and neural networks to optimize athletic performance 🏋🏻‍♂️.  More specifically, my current projects revolve around <span class="font-weight-bold">3D human motion reconstruction from casually captured videos</span>.
 
 If you are interested in similar topics, please reach out! 
 
