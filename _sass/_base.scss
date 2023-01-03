@@ -12,6 +12,11 @@ div {
   font-family: cursive;
   font-weight: bolder;
 }
+
+.bold {
+  font-weight: bolder;
+}
+
 a, table.table a {
   color: $theme-color;
   &:hover {

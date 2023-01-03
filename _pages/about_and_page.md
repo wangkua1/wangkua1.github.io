@@ -15,6 +15,7 @@ years: [2023,2022,2021,2020,2019,2018,2017,2016]
 # nav: true
 ---
 <br/>
+
 <img align="right" width="200px" src="assets/img/headshot.JPG">
 # Bio
 Hi! I am a PostDoc at [Stanford CS](https://cs.stanford.edu/) and the [Wu Tsai Human Performance Alliance](https://humanperformancealliance.org/). I work closely with Prof. [Serena Yeung](https://ai.stanford.edu/~syyeung/), Prof. [Karen Liu](https://tml.stanford.edu/), Prof. [Scott Delp](https://nmbl.stanford.edu/) and members in their groups. 
@@ -25,12 +26,14 @@ Previously, I obtained my Ph.D. in Machine Learning at the University of Toronto
 <!-- [CV/Resume](assets/pdf/resume.pdf) not up-to-date. -->
 
 <br/>
+
 # Research Interest
 Along with my colleagues , we think about how to use AI and neural networks to optimize athletic performance 🏋🏻‍♂️.  More specifically, my current projects revolve around **3D human motion reconstruction from casually captured videos**.
 
 If you are interested in similar topics, please reach out! 
 
 <br/>
+
 # Publications
 <div class="publications">
 
@@ -42,6 +45,7 @@ If you are interested in similar topics, please reach out!
 </div> 
 
 <br/>
+
 # Professional Experience
 I was
 * an intern at Google Brain (MTV, TOR) in 2018 hosted by [Chung-Cheng Chiu](https://ai.google/research/people/ChungChengChiu). We worked on speech recognition together.
