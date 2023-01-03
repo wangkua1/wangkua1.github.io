@@ -4,6 +4,14 @@
 
 // Typography
 
+div {
+  font-family: Georgia;
+}
+
+.chinese {
+  font-family: cursive;
+  font-weight: bolder;
+}
 a, table.table a {
   color: $theme-color;
   &:hover {
