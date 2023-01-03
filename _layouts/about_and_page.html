@@ -10,17 +10,18 @@ layout: default
     <h1 class="post-title"><span class="font-weight-bold">Kuan-Chieh</span> (Jackson) Wang</h1>
     <h1> <span class="chinese"> 王冠傑 </span>
     </h1>
-    <h2>
+    
+    <p class="post-description">{{ page.description }}</p>
+
+  </header>
+  <div>
       {% if page.social %}
               <!-- <div class="social"> -->
                 {% include social.html %}
                 <div class="contact-note">{{ site.contact_note }}</div>
               <!-- </div> -->
               {% endif %}
-    </h2>
-    <p class="post-description">{{ page.description }}</p>
-
-  </header>
+    </div>
 
   <article>
     <div class="row">
