@@ -60,6 +60,9 @@
       {% if entry.year %}
         {{entry.year}}
       {% endif %}
+      {% if entry.annot %}
+        -- <em style="color:red;">{{entry.annot}}</em>
+      {% endif %}
       </span>
     {% endif %}
 
