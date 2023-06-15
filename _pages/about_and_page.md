@@ -28,9 +28,12 @@ Previously, I obtained my Ph.D. from the University of Toronto (UofT) and [Vecto
 <br/>
 
 # Research Interest
-Along with my colleagues , we think about how to use AI and neural networks to optimize athletic performance 🏋🏻‍♂️.  More specifically, my current projects revolve around <span class="font-weight-bold">3D human motion reconstruction from casually captured videos</span>.
+My research centers around deep learning, probabilistic generative models, computer vision, and digital human models. 
+Clear gaps exist between current AI models and human capabilities, including a 3D understanding of the world and the ability to quickly adapt to new tasks.  Driven by these gaps, my recent focus is on <span class="font-weight-bold">*3D computer vision*</span> and <span class="font-weight-bold">*open-world learning*</span>.
 
-If you are interested in similar topics, please reach out! 
+<!-- Along with my colleagues , we think about how to use AI and neural networks to optimize athletic performance 🏋🏻‍♂️.  More specifically, my current projects revolve around <span class="font-weight-bold">3D human motion reconstruction from casually captured videos</span>. -->
+
+If you are interested in similar topics, reach out! 
 
 <br/>
 
