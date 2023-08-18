@@ -23,7 +23,7 @@ Hi! I am a PostDoc at [Stanford CS](https://cs.stanford.edu/) and the [Wu Tsai H
 
 Previously, I obtained my Ph.D. from the University of Toronto (UofT) and [Vector Institute](https://vectorinstitute.ai/) and was advised by Prof. [Rich Zemel](http://www.cs.toronto.edu/~zemel/inquiry/home.php). I obtained my undergraduate degree from Engineering Science at UofT. I was born and raised in Taipei, [Taiwan](https://www.youtube.com/watch?v=FYpyquAvYLM).
 
-<!-- [CV/Resume](assets/pdf/resume.pdf) not up-to-date. -->
+Here is my [CV/Resume](assets/pdf/Kuan_Chieh_Wang_resume-202308.pdf).
 
 <br/>
 
