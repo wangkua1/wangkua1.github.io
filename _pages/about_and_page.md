@@ -37,6 +37,15 @@ If you are interested in similar topics, reach out!
 
 <br/>
 
+# Preprints
+<div class="publications">
+
+  {% bibliography -f preprints %}
+</div> 
+
+<br/>
+
+
 # Publications
 <div class="publications">
 
