@@ -68,34 +68,34 @@
 
     <span class="links">
     {% if entry.abstract %}
-      [<a class="abstract">Abs</a>]
+      <a class="abstract">Abs</a>
     {% endif %}
     {% if entry.arxiv %}
-      [<a href="http://arxiv.org/abs/{{ entry.arxiv }}" target="_blank">📄 Paper</a>]
+      <a href="http://arxiv.org/abs/{{ entry.arxiv }}" target="_blank">📄 Paper</a>
     {% endif %}
     {% if entry.paper %}
-      [<a href="{{ entry.paper }}" target="_blank">📄 Paper</a>]
+      <a href="{{ entry.paper }}" target="_blank">📄 Paper</a>
     {% endif %}
     {% if entry.html %}
-      [<a href="{{ entry.html }}" target="_blank">🌐 HTML</a>]
+      <a href="{{ entry.html }}" target="_blank">🌐 HTML</a>
     {% endif %}
     {% if entry.page %}
-      [<a href="{{ entry.page }}" target="_blank">🌐 Project Page</a>]
+      <a href="{{ entry.page }}" target="_blank">🌐 Project Page</a>
     {% endif %}
     {% if entry.pdf %}
-      [<a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" target="_blank">📄 PDF</a>]
+      <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" target="_blank">📄 PDF</a>
     {% endif %}
     {% if entry.supp %}
-      [<a href="{{ entry.supp | prepend: '/assets/pdf/' | relative_url }}" target="_blank">Supp</a>]
+      <a href="{{ entry.supp | prepend: '/assets/pdf/' | relative_url }}" target="_blank">Supp</a>
     {% endif %}
     {% if entry.poster %}
-      [<a href="{{ entry.poster | prepend: '/assets/pdf/' | relative_url }}" target="_blank">Poster</a>]
+      <a href="{{ entry.poster | prepend: '/assets/pdf/' | relative_url }}" target="_blank">Poster</a>
     {% endif %}
     {% if entry.slides %}
-      [<a href="{{ entry.slides | prepend: '/assets/pdf/' | relative_url }}" target="_blank">Slides</a>]
+      <a href="{{ entry.slides | prepend: '/assets/pdf/' | relative_url }}" target="_blank">Slides</a>
     {% endif %}
     {% if entry.code %}
-      [<a href="{{ entry.code }}" target="_blank">🛠 Code</a>]
+      <a href="{{ entry.code }}" target="_blank">🛠 Code</a>
     {% endif %}
     </span>
 
