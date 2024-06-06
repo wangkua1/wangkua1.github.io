@@ -22,7 +22,7 @@ $green-color-bright:  #11D68B !default;
 $purple-color:        #B509AC !default;
 $pink-color:          #f92080 !default;
 $pink-color-light:    #ffdddd !default;
-$yellow-color:        #efcc00 !default;
+$yellow-color:        #daba00 !default;
 $my-color:            #3399ff !default;
 
 
@@ -31,7 +31,7 @@ $grey-color-light:    lighten($grey-color, 40%);
 $grey-color-dark:     darken($grey-color, 25%);
 
 /* Set theme colors *************************/
-$theme-color:         $my-color;
+$theme-color:         $yellow-color;
 
 $link-color:          $green-color;
 $text-color:          #111 !default;
