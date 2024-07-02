@@ -3,7 +3,7 @@
 # -----------------------------------------------------------------------------
 
 title: Kuan-Chieh (Jackson) Wang
-email: wangkua1@stanford.edu
+email: jwang23@snapchat.com
 description: > # this means to ignore newlines until "url:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 footer_text: >
@@ -47,7 +47,7 @@ research_gate_profile: # your profile on ResearchGate
 blogger_url: # your blogger URL
 youtube_url: https://www.youtube.com/channel/UCrm7pTN2tU3ko1-XmCX1IbA
 
-contact_note: 
+contact_note:
 
 google_analytics: UA-XXXXXXXXX # out your google-analytics code
 
@@ -121,7 +121,7 @@ scholar:
 
   first_name: Kuan-Chieh
   last_name: Wang
-  
+
 
   style: apa
   locale: en
