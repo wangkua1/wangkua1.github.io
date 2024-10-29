@@ -36,6 +36,7 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # -----------------------------------------------------------------------------
 
 # github_username: wangkua1 # your GitHub user name
+# email: jwang23@snapchat.com # your email
 twitter_username: kcjacksonwang # your Twitter handle
 linkedin_username: jackson-wang-97a066139 # your LinkedIn user name
 scholar_userid: LgMuT6IAAAAJ # your Google Scholar ID
@@ -130,7 +131,9 @@ scholar:
   order: descending
 
   source: /_bibliography/
-  bibliography: papers.bib
+  bibliography:
+    - papers.bib
+    - preprints.bib
   bibliography_template: bib
 
   replace_strings: true

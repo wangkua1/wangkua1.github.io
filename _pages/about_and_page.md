@@ -17,15 +17,15 @@ years: [2024,2023,2022,2021,2020,2019,2018,2017,2016]
 <br/>
 
 <!-- <img align="right" width="200px" src="assets/img/headshot.JPG"  style="border-radius: 50%;"> -->
-<img align="right" width="200px" src="assets/img/headshot.JPG" style="border-radius: 50%; border: 20px solid transparent; border-image: linear-gradient(to right, transparent, #ffffff, transparent); border-image-slice: 1;">
+<img align="right" width="200px" src="assets/img/jackson-snap-office.jpg" style="border-radius: 50%; border: 20px solid transparent; border-image: linear-gradient(to right, transparent, #ffffff, transparent); border-image-slice: 1;">
 
 # Bio
 
-Hi! I am a Research Scientist at [Snap Research](https://research.snap.com/team/category/all.html) in Palo Alto, where I work on generative models. My team and I are looking for [interns](https://snap-research.github.io/cv-call-for-interns-2024/). Feel free to reach out to me directly as well!
+Hi! I am a Research Scientist at [Snap Research](https://research.snap.com/team/creative-vision.html) in Palo Alto, where I work on generative models. My team and I are looking for [interns](https://snap-research.github.io/cv-call-for-interns-2025/). Feel free to reach out to me directly as well!
 
 
-Before joining Snap, I was a postdoc at Stanford CS and the Wu Tsai Human Performance Alliance where I worked closely with Prof. Serena Yeung, Prof. C. Karen Liu, and Prof. Scott Delp.
-I did my Ph.D. at the University of Toronto advised by Prof. Rich Zemel.
+Before joining Snap, I was a postdoc at Stanford CS and the Wu Tsai Human Performance Alliance where I worked closely with professors Serena Yeung, C. Karen Liu, and Scott Delp.
+I did my Ph.D. at the University of Toronto advised by professor Rich Zemel.
 
 
 <!-- Hi! I am a PostDoc at [Stanford CS](https://cs.stanford.edu/) and the [Wu Tsai Human Performance Alliance](https://humanperformancealliance.org/). I work closely with Prof. [Serena Yeung](https://ai.stanford.edu/~syyeung/), Prof. [Karen Liu](https://tml.stanford.edu/), Prof. [Scott Delp](https://nmbl.stanford.edu/) and members in their groups.
@@ -48,13 +48,7 @@ If you are interested in similar topics, reach out!
 
 <br/> -->
 
-# Preprints
-<div class="publications">
 
-  {% bibliography -f preprints %}
-</div>
-
-<br/>
 
 
 # Publications
@@ -66,6 +60,13 @@ If you are interested in similar topics, reach out!
 {% endfor %}
 
 </div>
+
+# Preprints
+<div class="publications">
+  {% bibliography -f preprints %}
+</div>
+
+<br/>
 
 <br/>
 
