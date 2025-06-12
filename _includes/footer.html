@@ -3,9 +3,6 @@
   <div class="container mt-0">
     &copy; Copyright {{ site.time | date: '%Y' }} {{ site.title }}.
     {{ site.footer_text }}
-    {% if site.last_updated %}
-    Last updated: {{ "now" | date: '%B %d, %Y' }}.
-    {% endif %}
   </div>
 </footer>
 {% else %}
@@ -13,9 +10,6 @@
   <div class="container">
     &copy; Copyright {{ site.time | date: '%Y' }} {{ site.title }}.
     {{ site.footer_text }}
-    {% if site.last_updated %}
-    Last updated: {{ "now" | date: '%B %d, %Y' }}.
-    {% endif %}
   </div>
 </footer>
 {% endif %}

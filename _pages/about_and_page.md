@@ -65,3 +65,11 @@ I was
 * an intern at Google Brain (MTV, TOR) in 2018 hosted by [Chung-Cheng Chiu](https://scholar.google.com/citations?user=ixhmT3AAAAAJ&hl=en). We worked on speech recognition together.
 * a research student working with the Toronto Raptors' analysts Keith Boyarsky and Eric Khoury 🏀. My mom likes to believe that the Toronto Raptors getting better, and eventually winning the Championship in 2019 had something to do with my research. 🤔
 * a ML consultant at SmartFinance LLC, a start-up Rich co-founded. We had some fun trying to make finance easier with ML. -->
+
+<br/>
+
+{% if site.last_updated %}
+<div style="text-align: center; color: #999; font-size: 0.9em; margin-top: 2em; padding-top: 1em; border-top: 1px solid #eee;">
+  <em>Last updated: {{ site.time | date: '%B %Y' }}</em>
+</div>
+{% endif %}

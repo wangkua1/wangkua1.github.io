@@ -12,7 +12,7 @@ footer_text: >
 
 baseurl: '/'
 url: 'https://wangkua1.github.io'
-last_updated: false # set to true if you want to display last updated in the footer
+last_updated: true # set to true if you want to display last updated in the footer
 
 # -----------------------------------------------------------------------------
 # Layout
