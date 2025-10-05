@@ -1,0 +1,136 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same
+% directory as this .tex file. These files provide the resume style and themes
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+% \documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+% \moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+% \moderncvcolor{grey} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\documentclass{article} % For LaTeX2e
+\usepackage[dvipsnames]{xcolor}
+ 
+\usepackage{natbib}
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage{caption}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{attrib}
+\usepackage[scale=.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+\usepackage{algorithm}
+% \usepackage[noend]{algorithmic} 
+% \algsetup{indent=2em} 
+% \renewcommand{\algorithmiccomment}[1]{\hspace{2em}// #1} 
+\usepackage{caption}
+\usepackage{algpseudocode}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{subcaption}
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage{hhline}
+\usepackage{amssymb}
+\usepackage{sidecap}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=blue,      
+    urlcolor=blue,
+}
+% % Multiple bib
+% \usepackage{multibib}
+% \newcites{ref}{(others) }
+% \newcites{my}{ \underline{References} (mine) }
+
+% Font
+\usepackage{fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont{Times New Roman}
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION section*
+%----------------------------------------------------------------------------------------
+
+\newcommand*{\makecvtitle}{%
+  \makecvhead%
+  \makecvfoot}
+\newcommand*{\makecvhead}{}
+\newcommand*{\makecvfoot}{}
+\usepackage{enumitem}
+\setlist[enumerate]{itemsep=0mm}
+
+\input{math_commands}
+
+% \pagestyle{empty}
+% All information in this block is optional, comment out any lines you don't need
+% \title{Towards Safe AI that Learns in the Real World}
+\title{Cover Letter}
+\date{}
+\author{Kuan-Chieh Wang}
+
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+
+\vspace{-3em}
+\maketitle
+% \thispagestyle{empty}
+% \vspace{-3em}
+I am a Ph.D. student in the Computer Science Department at the University of Toronto.  During my graduate study, I contributed to both the machine learning and sports analytics communities.  My projects were published in the NeurIPS, ICML, ICLR, AISTATS, ICASSP and Sloan Sports Analytics Conference (SSAC).   
+
+
+\section{Research Experience}
+My project on using a neural network to predict NBA offensive play was among the first publications to use deep learning to improve basketball analytics~\citep{wang2016classifying}. In this project, we designed a neural network to predict which play (i.e. offensive strategy) was being executed given player tracking data. The result of this collaboration with the Toronto Raptors made its way into the day-to-day analytic tools of the team. 
+
+Actions in sports are inherently stochastic, and ambiguous. Players move in complex trajectories to fool their opponents.  In a follow-up study, my collaborators and I looked at using a generative graph neural network (GNN) to predict NBA player movements, and human motion capture data~\citep{kipf2018neural}. The novelty was in using the GNN to model relationship between entities (i.e., players in the NBA data, and joints in the motion data).  Empirically it improved the accuracy of future rollouts compared to baselines that did not model this relationship.
+
+Motivated by the \textbf{stochasticity and ambiguity} in real-world data such as the aforementioned sports and movement data, my Ph.D. research focuses on \textbf{uncertainty estimation and novelty detection using deep learning}. 
+
+Bayesian inference provides a principled framework to reason about uncertainty coming from a classifier, useful for calibration and detecting anomalous input. The prominent approaches to learning a Bayesian neural network (BNN) are variational inference, and MCMC sampling. 
+MCMC methods are appealing because of their flexibility, yet they are computationally expensive.  
+In~\citep{wangAPD2018}, we applied a powerful generative model, generative adversarial networks, to distill the posterior samples from BNNs. Our method was able to achieve the same level of performance on many tasks including anomaly detection while maintaining a >60\% saving in terms of storage cost.
+
+Another principled approach to novelty detection is through density (ratio) estimation~\citep{bishop1994novelty}. The higher the estimated density an input is, the more likely it is from the training distribution. Deep generative models give us an opportunity to model the density function of high-dimensional inputs. Attracted by this promise, and their ability to generate/simulate new samples, I worked on various deep generative models including VAEs~\citep{kipf2018neural},GANs~\citep{wangAPD2018,li2017dualing},Energy-based Models~\citep{grathwohl2019your,grathwohl2020cutting}, and Normalizing Flows~\citep{behrmann2020on}.
+
+\subsection{Collaborations and other contributions}
+I enjoy working with others.  Through collaborations I have learned about other topics beyond my own focus such as speaker recognition~\cite{wang2019centroid}, and graph neural networks~\cite{kipf2018neural}. Collaboration with a large group of scientist/engineers had also been an integral part of my study. When I was an intern at Google Brain, I was part of the team that released a widely used \href{https://github.com/tensorflow/lingvo}{seq2seq package}~\cite{shen2019lingvo}. 
+Throughout my Ph.D., I have contributed to a 5-year IARPA funded project, ~\href{https://www.iarpa.gov/index.php/research-programs/microns}{MICrONS} where I worked with not only machine learning researchers, but also neuro-scientists to combine neuroscience with the latest progress in AI. 
+
+\section{Aligning with research at Google}
+Research from Google has certainly played an influential role in my own research, including publications in the area of OOD detection, few-shot learning, graph neural networks to name a few. 
+
+I believe that my research interest and the research agenda outlined above align well with research at Google. 
+
+
+\bibliographystyle{plain}
+\bibliography{papers}
+
+
+\end{document}

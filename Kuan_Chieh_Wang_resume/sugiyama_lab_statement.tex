@@ -1,0 +1,167 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same
+% directory as this .tex file. These files provide the resume style and themes
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+% \documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+% \moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+% \moderncvcolor{grey} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\documentclass{article} % For LaTeX2e
+\usepackage[dvipsnames]{xcolor}
+ 
+\usepackage{natbib}
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage{caption}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{attrib}
+\usepackage[scale=.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+\usepackage{algorithm}
+% \usepackage[noend]{algorithmic} 
+% \algsetup{indent=2em} 
+% \renewcommand{\algorithmiccomment}[1]{\hspace{2em}// #1} 
+\usepackage{caption}
+\usepackage{algpseudocode}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{subcaption}
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage{hhline}
+\usepackage{amssymb}
+\usepackage{sidecap}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=blue,      
+    urlcolor=blue,
+}
+% % Multiple bib
+% \usepackage{multibib}
+% \newcites{ref}{(others) }
+% \newcites{my}{ \underline{References} (mine) }
+
+% Font
+\usepackage{fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont{Times New Roman}
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION section*
+%----------------------------------------------------------------------------------------
+
+\newcommand*{\makecvtitle}{%
+  \makecvhead%
+  \makecvfoot}
+\newcommand*{\makecvhead}{}
+\newcommand*{\makecvfoot}{}
+\usepackage{enumitem}
+\setlist[enumerate]{itemsep=0mm}
+
+\input{math_commands}
+
+% \pagestyle{empty}
+% All information in this block is optional, comment out any lines you don't need
+% \title{Towards Safe AI that Learns in the Real World}
+\title{Cover Letter}
+\date{}
+\author{Kuan-Chieh Wang}
+
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+
+\vspace{-3em}
+\maketitle
+% \thispagestyle{empty}
+% \vspace{-3em}
+In this cover letter I include a short research statement, highlight some of my personal quality, and describe how my work is relevant to the Sugiyama Lab.  Thank you for considering my application.
+
+\section{Research Statement: Reliable Deep Learning for the Real World}
+%     \begin{quote}
+%   {\em "To know what you know and what you don't know, that is true knowledge."} \attrib{ -- Confucius} 
+% \end{quote}
+
+The success of deep networks at solving recognition problems has made them popular tools in the industry.  Deep classifiers learn to minimize the empirical risk of examples collected from the training distribution. Generalization to unseen test examples heavily relies on the assumption that the test examples come from a distribution identical to the training distribution (the i.i.d. assumption), an assumption rarely true in practice. Imagine a self-driving car trained on Toronto streets.  It might drive into the mountains and be faced with road conditions and animals it had never seen, or it might drive to Quebec where the street signs are in French. 
+
+\textbf{Out-of-distribution (OOD) detection and domain adaptation} are research topics (among others) trying to address this distribution-shift issue. 
+OOD detection is the task of detecting inputs that are not from the training distribution. Domain adaptation is the task of learning systems that can perform well when faced with distribution-shifted (DS) inputs.
+
+% In contrast to discriminative models which learn the conditional mapping of inputs to labels, generative models learn to model the input distribution. Generative models are useful in mainly three ways: generate samples, extract features, and estimate the density of an input. Their ability to estimate density makes them a natural candidate for solving the mis-matched distribution problem that discriminative models alone cannot solve. Early works in machine learning already laid great foundations, and theoretical guarantees for using likelihood ratios for both dealing with DS inputs~\citep{shimodaira2000improving}, and detecting OOD inputs~\citep{bishop1994novelty}. Yet, these techniques were developed for problems in relatively low dimensional settings, and have yet to be integrated with deep networks. How can we scale these insights from the 90s to make modern deep learning algorithms more reliable in the real world? 
+  
+\ \ 
+
+\textbf{Research Goal:} 
+When faced with OOD and DS inputs, deep learning algorithms today fail silently. 
+In order to have autonomous agents that can be deployed in the real world, my research focus on building machines that can deal with a mis-matched test distribution, detect when an environment is changing, cope with and learn from limited examples in a new environment.  
+% The resulting systems allow practitioners to deploy deep learning classifiers to mis-matched and changing test environments without having to manually intervene.
+
+\ \
+
+% The general strategy is to scale the aforementioned approaches based on likelihood ratios~\cite{shimodaira2000improving,bishop1994novelty} by using deep generative models to assist deep discriminative models. I will term this approach “generative-model-assisted classifiers” in this proposal. 
+
+\textbf{Recent progress:} 
+Bayesian inference provides a principled framework to reason about uncertainty coming from a classifier, useful for detecting OOD input. The prominent approaches to learning a Bayesian neural network (BNN) are variational inference, and MCMC sampling. 
+MCMC methods are appealing because of their flexibility, yet they are computationally expensive.  
+In~\citep{wangAPD2018}, we applied a powerful generative model, generative adversarial networks (GANs), to distill the posterior samples from BNNs. Our method was able to achieve the same level of performance on many tasks including OOD detection while maintaining a >60\% saving in terms of storage cost. However, BNNs that place a prior on the parameters suffer from a fundamental drawback: it is unclear what `prior' belief we really have about network parameters, and how these priors translate to the networks' behaviour. Though recent efforts started to look at priors in the function space~\citep{sun2019functional,wang2019function}, these methods are still far from being scalable.
+
+Another principled approach to OOD detection is through density (ratio) estimation~\citep{bishop1994novelty}. The higher the estimated density an input is, the more likely it is from the training distribution.  
+In contrast to this intuition, deep density models like Flows and autoregressive models are shown to incorrectly assign higher density values to OOD input~\citep{nalisnick2018deep,kirichenko2020normalizing}.
+One hypothesis is that the prior distribution is too restrictive. Combined with the forward KL objective, these led to a mode-covering behaviour and spurious modes.
+In~\citep{grathwohl2019your}, we developed a hybrid (discriminative and generative) model that can do well on both classification, and generation. The model is trained as a energy-based model (EBM) on the joint distribution $p(y, \xx)$. Compared to other classes of generative models I worked on: variational autoencoders~\citep{kipf2018neural}, GANs~\citep{wangAPD2018,li2017dualing}, Flows~\citep{behrmann2020on}, EBMs are not restricted by a prior distribution like the other decoder-based models. Our model demonstrated improved OOD detection performance among other evaluations.
+
+The standard OOD detection benchmarks share the characteristic that classifiers are very accurate (>90\%) on the in-distribution examples.  This is not representative of many real-world scenarios where classifier performance are sub-optimal because of the difficulty of the problem, or scarcity of training data. For example, in medical imaging, the long-tailed distribution of diseases is more naturally framed as a few-shot learning problem than a standard supervised one~\citep{prabhu2019few}. Intuitively, OOD detection problem in these settings would be more challenging, and require methods beyond baselines developed in the standard setting.  In~\citep{wang2020fsood}, we proposed a new few-shot OOD detection benchmark, demonstrated the shortcomings of existing OOD detection methods and the effectiveness of a meta-learned OOD detection method.
+
+
+\textbf{Current/future plan:} 
+My research vision is to achieve an agent that can \textbf{\textit{recognize distribution-shift, and quickly adapt to it.}}
+
+There are a couple of immediate problems with the current OOD detection methods. 
+Traditionally, in the low-dimensional regime, using a density model learned on the dataset works well for OOD detection~\citep{bishop1994novelty}. In high dimensions, the best performing OOD detectors today are designed in an ad-hoc fashion. One approach is to build a density model on features extracted from a pretrained classifier~\citep{lee2018simple}. Another approach relies on the likelihood ratio of two generative models~\citep{ren2019likelihood,serra2019input}.  In one case, we assume that features from a pretrained classifier is useful for OOD detection, and in another we approximate a ``backgrond'' model based on heuristics. An ideal OOD detection method should not rely on such assumptions.
+Secondly, current OOD detection methods do not provide any guarantees. They are evaluated on a few arbitrarily selected surrogate OOD datasets. This evaluation does not tell us how well the OOD method actually does out in the wild, hence how much we can trust this critical piece of a deep learning pipeline. I am interested in addressing the evaluation problem, and develop methods that can provide guarantees.
+
+Beyond simply identifying OOD/DS inputs, agents should be able to quickly adapt to a new environment, i.e., they should do a good job on few-shot learning under distribution shift. Popular methods for dealing with DS inputs rely on learning feature extractors agnostic to domain information~\citep{long2017conditional}. In contrast, composing generative models from the various domain can provide a more flexible system that can cope with  unseen domains not available at training time. To achieve this goal, one  of my current projects is looking at few-shot generative models under domain shift.
+
+\textbf{Relevance to the Sugiyama Lab:}
+I understand that one of the long term visions of the Sugiyama lab is to achieve robust machine learning, i.e. learning with noisy, and incomplete information.  I believe that my experience and interest are complementary to the lab.  I have published projects about various deep generative models, which are useful tools for reasoning about density in high-dimensional spaces. Both recently and in the past the Sugiyama lab and Professor Sugiyama had use the technique of density-ratio, and importance weighing in the application of learning under covariate shift and anomaly detection~\citep{abe2019anomaly,sugiyama2007direct,sugiyama2008direct}.  I believe that advancing deep generative model specifically to improve this line of work will be one mutual interest.  Recently the Sugiyama lab has also contributed to the topic of few-shot learning~\citep{teshima2020few}, which can be seen as another type of learning  under distribution shift. On top of deep generative models and anomaly detection, I spent a significant portion of my Ph.D. on the topic of few-shot learning~\citep{wang2019centroid,wang2019customizable,wang2020fsood}.  I believe my experience on this topic can accelerate the effort on few-shot learning in the Sugiyama lab.
+
+
+\subsection{Collaborations and other contributions}
+I enjoy working with others.  Through collaborations I have learned about other topics beyond my own focus such as speaker recognition~\cite{wang2019centroid}, and graph neural networks~\cite{kipf2018neural}. Collaboration with a large group of scientist/engineers had also been an integral part of my study. When I was an intern at Google Brain, I was part of the team that released a widely used \href{https://github.com/tensorflow/lingvo}{seq2seq package}~\cite{shen2019lingvo}. 
+Throughout my Ph.D., I have contributed to a 5-year IARPA funded project, ~\href{https://www.iarpa.gov/index.php/research-programs/microns}{MICrONS} where I worked with not only machine learning researchers, but also neuro-scientists to combine neuroscience with the latest progress in AI. Personally, I see great values in mentorship.  When I was a junior student, I was very fortunate to have learned from senior students and postdocs.  I'm very excited about the possibility of sharing my experiences and technical knowledge with students who are getting started with AI research.
+
+
+\newpage
+\bibliographystyle{plain}
+\bibliography{papers}
+
+
+\end{document}

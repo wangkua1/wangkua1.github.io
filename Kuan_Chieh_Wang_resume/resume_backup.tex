@@ -1,0 +1,384 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plasmati Graduate CV
+% LaTeX Template
+% Version 1.0 (24/3/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati (alessandro.plasmati@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template needs to be compiled with XeLaTeX.
+% The main document font is called Fontin and can be downloaded for free
+% from here: http://www.exljbris.com/fontin.html
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,10pt]{article} % Default font size and paper size
+
+\usepackage{fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont{Times New Roman}
+% \setmainfont{Arial}
+% \setmainfont{Consolas}
+% \setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin} % Main document font
+
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+%\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
+% To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
+%\addtolength{\voffset}{-0.7cm}
+\usepackage[margin=1in]{geometry}
+% \usepackage[margin=0.5in]{geometry}
+% \usepackage{wrapfig}  % Commented out - not available in BasicTeX
+% \usepackage{tikz}     % Commented out - not available in BasicTeX
+% \usepackage{minipage}
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+%\hypersetup{colorlinks,breaklinks,urlcolor=black,linkcolor=black} % Set link colors throughout the document
+
+
+\usepackage{longtable}
+
+
+\usepackage[backend=biber,style=authoryear,maxnames=10]{biblatex}
+\addbibresource{papers.bib}
+\usepackage{filecontents}
+
+% \DeclareDelimFormat[bib]{nametitledelim}{\newline\bibsentence}
+% \usepackage{xpatch}
+% \makeatletter
+% \def\do#1{
+%   \ifcsdef{blx@bbx@#1}
+%     {\xpatchbibdriver{#1}
+%        {\printlist{language}%
+%         \newunit\newblock}
+%        {\printlist{language}%
+%         \printunit{\newline\bibsentence}}
+%        {}{}}
+%     {}} 
+% \abx@doentrytypes
+% \makeatother
+
+% \DeclareDelimFormat[bib]{nametitledelim}{\newline\bibsentence}
+% \usepackage{xpatch}
+% \makeatletter
+% \def\do#1{
+%   \ifcsdef{blx@bbx@#1}
+%     {\xpatchbibdriver{#1}
+%        {\printlist{language}%
+%         \newunit\newblock}
+%        {\printlist{language}%
+%         \printunit{\newline\bibsentence}}
+%        {}{}}
+%     {}} 
+% \abx@doentrytypes
+% \makeatother
+
+
+\definecolor{mycolor}{rgb}{0.3, 0.1, 0.5}
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\bfseries  \Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+% \titleformat{\section}{\bfseries \color{mycolor} \Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{-1pt}{-2pt} % Spacing around sections
+
+
+
+\begin{document}
+  
+\pagestyle{empty} % Removes page numbering
+
+\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+% \par{\centering{\Huge \textbf{Kuan-Chieh Wang} }\bigskip\par} % Your name
+% % \begin{wrapfigure}{r}{0.3\textwidth}
+% \begin{figure*}
+%   \begin{center}
+%     \includegraphics[width=0.3\textwidth]{headshot.jpg}
+%   \end{center}
+% \end{figure*}
+% % \end{wrapfigure}
+\vspace{-3em}
+% \begin{figure}[t]
+% \begin{minipage}[b]{0.7\linewidth}
+% \centering
+% \par{\centering{\Huge \textbf{Kuan-Chieh Wang} }\bigskip\par} 
+% \end{minipage}
+% \hspace{0.5cm}
+% \begin{minipage}[b]{0.2\linewidth}
+% \centering
+% % \includegraphics[width=\textwidth, trim=200 500 200 0, clip]{headshot.jpg}
+% \begin{tikzpicture}
+% \clip (-0.1,1) circle (1.2cm); 
+% \path (0,0) node{\includegraphics[width=3.2cm]{headshot.jpg}};
+% \end{tikzpicture}
+% \end{minipage}
+% \end{figure}
+
+\begin{figure}[t]
+\centering
+\par{\centering{\Huge \textbf{Kuan-Chieh (Jackson) Wang} }\bigskip\par} 
+\vspace{-2em}
+\end{figure}
+
+
+% \section{Personal Information}
+
+\begin{longtable}[c]{rl}
+\textsc{Website:} & \url{https://wangkua1.github.io}\\
+\textsc{Phone/Email:} & +1 669-246-8724 / \href{mailto:jwang23@snapchat.com}{jwang23@snapchat.com}\\
+% \textsc{Mailing Address:} & Department of Computer Science \\
+% & \footnotesize{10 King’s College Road, Rm. 3302, Toronto, Ontario M5S 3G4, CANADA}\\
+\end{longtable}
+
+%----------------------------------------------------------------------------------------
+%	RESEARCH INTERESTS
+%----------------------------------------------------------------------------------------
+\section{Research Interests}
+My current research focuses on \textbf{personalized generative AI}.  My goal is to \textit{(1)} build tools that allow users to tell their personal stories, and \textit{(2) }find scientific insights about identity of real people.
+
+% My research revolves around the integration of generative capabilities into perception systems.  
+% Probabilistic generative models are well-suited for solving real-world problems where the model is required to \textit{complete partial input} data (e.g., forecasting trajectory or 2D-to-3D lifting for 3D reconstruction). They also allow us to build more \textit{robust and reliable} methods by better estimating the distribution of the input or the distribution of model parameters.  
+% My recent research contributions include \textbf{3D computer vision} and \textbf{open-world learning}.
+
+
+ 
+
+% My research centers around deep learning, probabilistic generative models, computer vision, and digital human models. 
+% Despite the rapid progress, clear gaps exist between current AI models and human capabilities, including a 3D understanding of the world and the ability to quickly adapt to new tasks.  Driven by these gaps, my recent focus is on \textbf{3D computer vision} and \textbf{open-world learning}.
+
+% I'm interested in out-of-distribution detection, (deep) generative modelling, Bayesian modelling, few-shot/transfer learning, and domain generalization. 
+% In terms of application areas, I have worked on computer vision, speech recognition, and sports analytics. 
+
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE 
+%----------------------------------------------------------------------------------------
+% \newpage
+\section{Industry Experience}
+
+\begin{longtable}{r|p{14cm}}
+%------------------------------------------------
+    \textsc{Present}  & \textbf{Research Scientist}, Snap Inc., Palo Alto USA	 \\
+	\textsc{Dec.} 2023 & Working on personalized Gen AI with Kfir Aberman and Sergey Tulyakov.\\	
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+    \textsc{Dec.} 2018 & \textbf{Research Intern}, Google, Toronto Canada	 \\
+	\textsc{Sept.} 2018 & Worked within Google Brain team (TOR) with a focus on speech recognition with Chung-Cheng Chiu, and William Chan.\\	
+\multicolumn{2}{c}{} \\
+%------------------------------------------------
+    \textsc{Sept.} 2018 & \textbf{Research Intern}, Google, Mountain View USA	 \\
+	\textsc{Jun.} 2018 & Worked within Google Brain team (MTV) with a focus on speech recognition hosted by Chung-Cheng Chiu.\\	
+\multicolumn{2}{c}{} \\
+%------------------------------------------------
+	\textsc{Jul.} 2016 & \textbf{Machine Learning Consultant}, SmartFinance LLC, NYC USA	 \\
+	\textsc{Jan.} 2015 & Researched data-driven techniques for merchant resolution (MR).\\	
+	& Developed tools for MR components such as NLP-based merchant name cleanup, logo retrieval, and location resolution.\\
+\multicolumn{2}{c}{} \\
+%------------------------------------------------
+
+	\textsc{Aug.} 2013 & \textbf{Software Development Intern}, Broadcom Corporation, San Diego USA \\
+	\textsc{May.} 2012 & Developed on the NFC stack and various downstream application components and was involved in designing new protocol/specs.\\
+& Worked with software verification team to develop unit testing scripts using \textsc{Perl}/\textsc{C++}.\\
+\multicolumn{2}{c}{} \\
+\end{longtable}
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Academic Experience / Education}
+
+\begin{longtable}[l]{rl}	
+    \textsc{11/2021 - 11/2023} & Postdoc, Dept. of Computer Science, \textbf{Stanford University}, Stanford,  USA	 \\
+	 & Worked with professors Serena Yeung, C. Karen Liu, and Scott Delp. \\	
+\multicolumn{2}{c}{} \\
+	%------------------------------------------------
+
+	\textsc{09/2016 - 11/2021} & \textsc{Ph.D.}, Dept. of Computer Science, \textbf{University of Toronto}, Toronto, Canada\\
+    & Advisor: \href{http://www.cs.toronto.edu/~zemel/inquiry/home.php}{Richard Zemel}\\
+	& Thesis: Learning to Handle Inputs not from the Training Distribution \\
+	&\\
+	%------------------------------------------------
+	\textsc{09/2014 - 06/2016} & \textsc{M.Sc.}, Dept. of Computer Science, \textbf{University of Toronto}, Toronto, Canada\\
+	& Advisor: \href{http://www.cs.toronto.edu/~zemel/inquiry/home.php}{Richard Zemel}\\
+	& Thesis: Classifying NBA Offensive Plays Using Neural Networks \\
+	&\\
+	%------------------------------------------------
+	\textsc{09/2009 - 06/2014} & \textsc{B.ASc.}, Div. of Engineering Science, \textbf{University of Toronto}, Toronto, Canada\\
+	& Thesis: Automated Tuning of Neural Networks: Analysis of Hyperparameters Proposed \\ 
+    &         by the Bayesian Optimization Framework \\
+\end{longtable}
+
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+\section{Publications}
+% * below indicates equal contribution
+% \bibliographystyle{unsrt}
+% \nobibliography{papers}
+
+
+\begin{enumerate}
+    \item \fullcite{gu2023ponp}
+    \item \fullcite{wang2022nemo} ({\color{red} Highlight ($\sim$2.5\% of submissions)})
+    \item \fullcite{zohar2022prob}
+    \item \fullcite{zhangdrml} 
+    \item \fullcite{weng2022domain} 
+    \item \fullcite{funke2022disentanglement} 
+    \item \fullcite{wang2021variational} 
+    \item \fullcite{wang2021grad2task} 
+    \item \fullcite{behrmann2020on} 
+    \item \fullcite{wang2020fsood} ({\color{red} Spotlight})
+    \item \fullcite{grathwohl2020cutting}
+    \item \fullcite{grathwohl2019your} ({\color{red} Oral})
+    \item \fullcite{wang2019customizable}
+    \item \fullcite{wang2019safeml}
+    \item \fullcite{shen2019lingvo} 
+    \item \fullcite{wang2019centroid}
+    \item \fullcite{wangAPD2018}
+    \item \fullcite{kipf2018neural}
+    \item \fullcite{li2017dualing} ({\color{red} Spotlight})
+    \item \fullcite{wang2016classifying}
+  \end{enumerate}
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	RESEARCH EXPERIENCE 
+%----------------------------------------------------------------------------------------
+
+% \section{Research Projects \footnotesize{(unpublished)} \protect\footnote{reports and results for past projects available upon request}}
+% \begin{longtable}{r|p{15.5cm}}
+
+
+% \multicolumn{2}{c}{} \\
+% %------------------------------------------------
+% 	\textsc{2017} & \textbf{Understanding various evaluation/objective functions of generative models}	 \\
+% 	& Exposing weaknesses of InceptionScore and extending it.\\	
+% 	& Comparing various implementations of Wasserstein distance (i.e. ways to enforce Lipschitz continuity) as metric/objective function.\\
+% \multicolumn{2}{c}{} \\
+% %------------------------------------------------
+% \textsc{2017} & \textbf{Semi-supervised Learning}\\
+% & Proposing to use Deep Spectral Clustering for semi-supervised learning.\\
+% & Investigating into the recent progress of SSL literature (i.e. from 81\% accuracy on 10\% labelled CIFAR10 to 91\% in the past year).\\
+% & Using methods motivated by the attack/defense community for extending SSL ideas such as self-ensembling/stabilization.\\
+% \multicolumn{2}{c}{} \\
+% % %------------------------------------------------
+
+% % \textsc{Jun.} 2017 & \textbf{Multimodal sequence learning with SportVU data }\\
+% % \textsc{Feb.} 2017 & Used the idea of dropout as approximate Bayesian inference in the context of RNN sequence generation.\\
+% % & Produced visually convincing samples of real basketball player trajectories (\footnotesize{animations available}).\\
+% % \multicolumn{2}{c}{} \\
+
+% %------------------------------------------------
+
+% \textsc{Apr.} 2017 & \textbf{Semi-Supervised Structured Prediction with Generative Adversarial Networks}\\
+% \textsc{Nov.} 2016 & Used GANs for jointly generating segmentation image pairs for semi-supervised segmentation and data augmentation.\\
+% & Showed improved segmentation performance in reduced Cityscapes dataset.\\
+% \multicolumn{2}{c}{} \\
+
+
+% %------------------------------------------------
+
+% \textsc{Jun.} 2015 & \textbf{Attention by Convolution}\\
+% \textsc{Jan.} 2015 & Proposed to use convolution as a way to smoothly shift attention mask.  The result was a fully differentiable model with hard attention crops.\\
+% & Showed model attended to region of interest despite presence of distractor objects.\\
+% \multicolumn{2}{c}{} \\
+% \end{longtable}
+
+
+%----------------------------------------------------------------------------------------
+%	AWARDS AND HONORS
+%----------------------------------------------------------------------------------------
+
+\section{Awards and Honors}
+
+\begin{longtable}[l]{rl}
+2017-2018 & Bell Graduate Scholarship from \textit{University of Toronto}\\
+2014-2015 & Mitacs Accelerate Grant with \textit{University of Toronto \& Toronto Raptors}\\
+2011 & Honorable Mention - Basic Science at \textit{International Paediatric Radiology Conference}\\
+2011 & Dream of a Cure Studentship from \textit{Canadian Hemophilia Society}\\
+2009-2011 & Queen Elizabeth II Aiming for the Top Scholarship\\
+%\textsc{June} 2010 & {\textsc{Gmat}\textregistered}\setmainfont[SmallCapsFont=Fontin SmallCaps]{Fontin-Regular}: 730 (\textsc{q:50;v:39}) 96\textsuperscript{th} percentile; \textsc{awa}: 6.0/6.0 (89\textsuperscript{th} percentile)
+\end{longtable}
+
+% \section{Talks}
+% \begin{enumerate}
+%     \item "Few-shot Out-of-Distribution Detection" at ICML Uncertainty in Deep Learning workshop 2020 \href{https://slideslive.com/38930947/fewshot-outofdistribution-detection?ref=speaker-27513-latest}{link}
+%     \item "Customizable Facial Gesture Recognition For Improved Assistive Technology" at ICLR AI for Social Good Workshop 2020 \href{https://slideslive.com/38915747/customizable-facial-gesture-recognition-for-improved-assistive-technology}{link}
+% \end{enumerate}
+
+% %----------------------------------------------------------------------------------------
+% %	TEACHING EXPERIENCE
+% %----------------------------------------------------------------------------------------
+
+% \section{Teaching Experience}
+
+% %\begin{longtable}[l]{r|p{14cm}}
+% \begin{longtable}{r|p{15.5cm}}
+% 	\textsc{Sep.} 2014 & \textbf{University of Toronto}, Toronto, Canada\\
+% 	\textsc{Present}  & \emph{Teaching Assistant}\\
+% 	& Courses: Programming on the Web, Computational Neuroscience, Eng. Sci. Thesis Mentor\\
+% 	\multicolumn{2}{c}{} \\
+% \end{longtable}
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS 
+%----------------------------------------------------------------------------------------
+
+
+\section{Services}
+\textbf{Conference Reviewer}: \\
+NeurIPS: 2019, 2021 ({\color{red}Top 8\% Reviewer}) \\
+ICML 2019, 2020 ({\color{red}Top Reviewer}), 2021 \\
+ICLR: 2019, 2020, 2021 ({\color{red}Reviewer Award}) \\
+CVPR: 2021 
+
+\textbf{Conference Volunteer}: 
+AISTATS (2021)
+
+% \section{Relevant Skills}
+
+% \begin{longtable}[l]{rl}
+% Deep Learning Frameworks: & \textsc{Tensorflow}, \textsc{Lua-Torch}, \textsc{PyTorch}, \textsc{Theano} \\
+% Programming language: & \textsc{Python} \textsc{Java}, \textsc{C++}, \textsc{Matlab}, \textsc{Javascript}, \textsc{CSS}\\
+% Operation Systems: & \textsc{Linux}(Ubuntu), Windows\\
+% \end{longtable}
+
+%----------------------------------------------------------------------------------------
+%	STANDARDIZED TESTS
+%----------------------------------------------------------------------------------------
+
+%\section{Standardized Tests}
+
+%\begin{longtable}[l]{rl}
+%\textsc{TOEFL:} & Reading 29, Listening 26, Speaking 22, Writing 28, Total 105.\\
+
+%\textsc{GRE:} & Verbal 155, Quantitative 170, Analytical Writing 3.0.\\
+%\end{longtable}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
